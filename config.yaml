@@ -1,0 +1,14 @@
+pomodoros:
+  -
+    id_no:
+    task:
+    completed:
+    time_created:
+    time_finished:
+    time_remaining:
+
+time_settings:
+  pomodoros: 
+  warnings:
+  short_breaks:
+  long_breaks:
