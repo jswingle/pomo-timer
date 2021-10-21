@@ -1,14 +1,21 @@
+- - -
+
+settings:
+  pomodoro_time: 25
+  warning_time: 5
+  short_breaks: 5
+  long_breaks: 30
+  alarm_sound: "./sound.mp3"
+  next_id: 2
+
 pomodoros:
   -
-    id_no:
-    task:
-    completed:
-    time_created:
-    time_finished:
-    time_remaining:
+    id_no: 1
+    task: "Complete the task."
+    completed: False
+    time_created: 2020-06-21 00:09:08.130167-07:00
+    time_finished: 2020-07-21 00:09:08.130167-07:00
+    time_remaining: 25
 
-time_settings:
-  pomodoros: 
-  warnings:
-  short_breaks:
-  long_breaks:
+
+...

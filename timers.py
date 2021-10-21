@@ -1,7 +1,10 @@
 import time
 from pomo import Pomo
+from playsound import playsound
 
 def display_timer(pomodoro):
+
+	
 	print("Press CTRL+C to pause.")
 	while pomodoro.time_remaining:
 		try:
@@ -16,6 +19,8 @@ def display_timer(pomodoro):
 
 	if not pomodoro.time_remaining:
 		print("Time remaining: 00:00\n\nTimer over!\n")
+		playsound("./sound.mp3",block=False)
+		pomodoro.time_finished = datetime.datetime.now()
 		pomodoro.completed = True
 
 def break_timer(time_remaining):
@@ -33,3 +38,4 @@ def break_timer(time_remaining):
 
 	if not time_remaining:
 		print("Time remaining: 00:00\n\nTimer over!\n")
+		playsound("./sound.mp3",block=False)
